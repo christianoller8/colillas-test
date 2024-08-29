@@ -15,7 +15,7 @@
 
 
 ## Pasos:
-1. Clonar el repositorio de https://github.com/christianoller8/colillas-test.git
+1. Clonar el repositorio de https://github.com/christianoller8/colillas-test.git o descargar en zip
 2. Iniciar el proyecto con editor de código
 
 3. Instalar dependencias:
