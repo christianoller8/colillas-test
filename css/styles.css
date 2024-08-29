@@ -1,0 +1,833 @@
+:root {
+  --blanco: #ffffff;
+  --dark: #303535;
+  --primario: #FFC107;
+  --secundario: #0097A7;
+  --gris: #757575;
+  --grisClaro: #DFE9F3;
+}
+/*  Globals */
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-snap-type: y mandatory;
+}
+
+/* Hero */
+.hero {
+  background-image: url(../assets/leone-venter-VieM9BdZKFo-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 814px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/leone-venter-VieM9BdZKFo-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 30px;
+  padding: 30px;
+}
+
+.logo {
+  filter: none;
+  position: relative;
+  z-index: 3;
+}
+
+
+.hero-content h2 {
+  font-size: 4.2rem;
+  color: #303536;
+  font-family: "Tinos", serif;
+  font-weight: 700;
+  line-height: 4.6rem;
+  height: 200px;
+}
+
+.hero-subcontent {
+  padding-bottom: 10px;
+  width: 55%;
+  height: 424px;
+}
+
+.card1 {
+  height: 44px;
+  margin-left: 10px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  border-bottom: 1px solid black;
+}
+
+.card2 {
+  height: 110px;
+  font-size: 3.2rem;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  line-height: 3.5rem;
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+
+.card p {
+  margin: 0;
+}
+
+.card svg {
+  margin-left: 10px;
+}
+
+/* Advantages */
+main {
+  height: 362px;
+}
+
+.advantages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 75px 75px 75px 75px;
+  background-color: #F7F7F7;
+  height: 362px;
+}
+
+.advantages-content {
+  height: 287px;
+  gap: 30px;
+}
+
+.advantages svg {
+  margin-bottom: 20px;
+}
+
+.advantages h3 {
+  color: var(--secundario);
+  font-weight: normal;
+}
+.advantages p {
+  line-height: 2;
+  text-align: center;
+  color: #848484;
+}
+.advantages .iconos {
+  height: 15rem;
+  width: 15rem;
+  background-color: var(--primario);
+  border-radius: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.name {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 3.6rem;
+  color: #1D1D1B;
+}
+
+/* Content */
+.content {
+  background-color: #303536;
+  color: #E7E5E4;
+  height: 662px;
+  padding: 8rem;
+  gap: 4rem;
+}
+
+.sub-content {
+  height: 502px;
+  gap: 40px;
+}
+
+.left-column,
+.right-column {
+  width: 50%;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.right-column p {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+.left-column h2 {
+  font-family: "Tinos", serif;
+  font-weight: 700;
+  font-size: 6.4rem;
+}
+
+.left-column p {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 3.2rem;
+}
+
+
+/* What-we-do */
+.what-we-do {
+  display: grid;
+  height: 658px;
+  padding: 7.5rem;
+  gap: 6rem;
+  background-color: #F7F7F7;
+}
+
+.what-we-do-content {
+  height: 400px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: solid 2px #E7E7E7;
+}
+
+.what-we-do-content h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 3.6rem;
+  line-height: 43px;
+  color: #1D1D1B;
+}
+
+.what-we-do-testimonial {
+  height: 337px;
+  padding: 50px 150px;
+  gap: 80px;
+}
+
+.testimonial-content {
+  height: 237px;
+  gap: 48px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.star-icons {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+
+.testimonial-content blockquote {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+  color: #000000;
+}
+
+.what-we-do-info {
+  display: grid;
+  justify-content: center;
+}
+
+.what-we-do-info .name {
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.what-we-do-info .position {
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 20px;
+}
+
+.company-logos {
+  display: flex;
+  justify-content: space-between;
+  height: 4.8rem;
+  background-color: #F7F7F7;
+}
+
+/* Form */
+.form-hero {
+  height: 713px;
+  padding: 75px;
+  gap: 86px;
+}
+
+.form-content {
+  height: 563px;
+  gap: 50px;
+  display: flex;
+}
+
+.form-title {
+  height: 116px;
+  gap: 10px;
+}
+
+.form-title h5 {
+  height: 20px;
+  gap: 10px;
+  color: #F5333F;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.form-title h3 {
+  height: 86px;
+  color: #1D1D1B;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 3.6rem;
+  line-height: 43.2px;
+}
+
+.form {
+  height: 563px;
+  gap: 30px;
+}
+
+.form fieldset {
+  border: none;
+}
+.form legend {
+  text-align: center;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--primario);
+}
+
+.field {
+  margin-bottom: 1rem;
+  height: 80px;
+  width: 298px;
+  gap: 8px;
+}
+.field label {
+  height: 24px;
+  color: #000000;
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.input-text {
+  width: 100%;
+  height: 48px;
+  border-radius: 3rem;
+  border: solid 1px #AAAAAA;
+  padding: 1.2rem;
+  gap: 8px;
+}
+
+.field textarea {
+  height: 18rem;
+  width: 620px;
+  gap: 8px;
+}
+
+.terms {
+  height: 21px;
+  gap: 8px;
+  margin: 2rem 0rem;
+}
+
+.terms label{
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  margin: 16px;
+  height: 21px;
+}
+
+.terms label span{
+  text-decoration: underline;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1D1D1B;
+  color: #FFFFFF;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 25px;
+  height: 50px;
+  gap: 1rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  border: none;
+}
+
+.button svg path {
+  fill: #FFFFFF;
+}
+
+/* Footer */
+.footer {
+  background-color: #303536;
+  height: 449px;
+  padding: 40px 80px 17px 80px;
+  gap: 40px;
+}
+
+.links {
+  height: 272px;
+  padding: 49px 0px;
+  gap: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.left-links,
+.right-links {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 174px;
+}
+
+.links h4 {
+  color: #EDEFEE;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.links .links-info {
+  width: 280px;
+  height: 110px;
+  color: #FFFFFF;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.links-info p {
+  display: flex;
+  justify-content: center;
+}
+
+.credits {
+  height: 80px;
+  gap: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.social {
+  display: flex;
+  width: 168px;
+  height: 24px;
+  gap: 12px;
+}
+
+.sub-credits {
+  display: flex;
+  height: 24px;
+  gap: 24px;
+}
+
+.sub-credits span {
+  color:#FFFFFF;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+}
+
+/* Utilities */
+.flex {
+  display: flex;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+
+@media (min-width: 768px) {
+  .field-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto 20rem;
+    column-gap: 1rem;
+  }
+}
+
+
+/* Media queries */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .hero {
+      height: 600px;
+      background-position: center top;
+  }
+
+  .hero-content {
+      padding: 20px;
+  }
+
+  .hero-content svg {
+    margin-bottom: 50px;
+}
+
+  .hero-content h2 {
+      font-size: 2.4rem;
+      line-height: 1.4;
+  }
+
+  .hero-subcontent {
+      width: 50%;
+      height: auto;
+      margin-top: 50px;
+  }
+
+  .card1, .card2 {
+      font-size: 1.4rem;
+  }
+
+  .card2 svg {
+    margin-top: 30px;
+  }
+  
+  .advantages, .what-we-do {
+    padding: 20px;
+  }
+  
+  .advantages {
+    padding-top: 70px;
+  }
+  
+  .content {
+    padding: 20px;
+    height: 830px;
+  }
+
+  .content h2 {
+    font-size: 6rem;
+  }
+
+  .right-column p {
+    margin-bottom: 30px;
+  }
+
+  .advantages-content {
+      width: 100%;
+      height: auto;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+
+  .what-we-do {
+    height: auto;
+  }
+
+  .what-we-do-content {
+      width: 100%;
+  }
+
+  .what-we-do-content h3 {
+    font-size: 2.5rem;
+  }
+
+  .what-we-do-testimonial {
+      padding: 20px;
+  }
+
+  .testimonial-content {
+      padding: 20px;
+  }
+
+  .company-logos {
+    display: grid;
+    justify-content: center;
+    height: 100%;
+    width: 785px;
+    padding-bottom: 50px;
+  }
+
+  .form-hero {
+      padding: 20px;
+      padding-top: 150px;
+  }
+
+  .form-content {
+    display: grid;
+    justify-content: center;
+  }
+
+  .form-title h5 {
+      font-size: 1.4rem;
+  }
+
+  .form-title h3 {
+      font-size: 2rem;
+  }
+
+.input-text, .field textarea {
+    font-size: 1rem;
+}
+
+.field-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto 20rem;
+  column-gap: 1rem;
+}
+
+  .field label {
+    font-size: 2rem;
+  }
+
+  .field textarea {
+    width: 650px;
+  }
+
+  .button {
+      font-size: 2rem;
+  }
+
+  .footer {
+      padding: 20px;
+      margin-top: 170px;
+  }
+
+  .left-links, .right-links {
+      width: 100%;
+  }
+
+  .links-info {
+      font-size: 1rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero {
+      height: 600px;
+  }
+
+  .hero-content {
+      padding: 40px;
+  }
+
+  .hero-subcontent {
+    height: auto;
+  }
+
+  .hero-content h2 {
+    font-size: 1.5rem; 
+    line-height: 1.2;
+  }
+
+  .card1 {
+    height: 25px;
+    font-size: 1rem;
+    width: 190px;
+  }
+
+  .card2 {  
+      font-size: 1.1rem;
+      line-height: 25px;
+      width: 200px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+}
+
+.advantages, .what-we-do {
+  padding: 10px;
+}
+
+.advantages {
+  flex-direction: column;
+}
+
+.name {
+  font-size: 1.6rem;
+}
+
+.content {
+  padding: 25px;
+  margin-top: 20px;
+  height: auto;
+  color: #FFFFFF;
+}
+
+.left-column h2 {
+  font-size: 2.8rem;
+}
+
+.left-column p {
+  font-size: 2rem;
+}
+
+.right-column p {
+  font-size: 1rem;
+}
+
+.what-we-do {
+  display: grid;
+  align-items: center;
+  background-color: #FFFFFF;
+}
+
+  .what-we-do-content {
+      width: 300px;
+      height: 860px;
+      display: flex;
+      justify-content: flex-start;
+  }
+
+  .what-we-do-content h3{
+    margin-left: 60px;
+}
+
+  .what-we-do-testimonial {
+      padding: 10px; 
+  }
+
+  .testimonial-content {
+      padding: 10px;
+  }
+
+  .company-logos {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+    width: auto;
+  }
+
+
+  .form-hero {
+      padding: 10px;
+      height: 600px;
+      width: auto;
+  }
+
+  .field-container {
+    display: grid;
+    grid-template-columns: 0%;
+    height: 600px;
+    width: auto;
+  }
+
+  .form-title h5 {
+      font-size: 1.2rem;
+  }
+
+  .form-title h3 {
+      font-size: 1.6rem;
+  }
+
+  .field label {
+    font-size: 1.6rem;
+    margin-left: 20px;
+  }
+
+  .field input {
+    height: auto;
+    width: 300px;
+    margin: 20px;
+  }
+
+  .input-text, .field textarea {
+      width: 100%;
+      font-size: 0.9rem;
+      margin: 20px;
+  }
+
+  .terms{
+    margin-top: 150px;
+    margin-left: 20px;
+  }
+
+  .button {
+      font-size: 1.5rem;
+      margin-left: 20px;
+  }
+
+  .footer {
+      padding: 10px;
+      max-width: auto;
+      height: 750px;
+      margin-top: 450px;
+  }
+
+  .links {
+    flex-direction: column;
+  }
+
+  .links-info {
+      font-size: 0.9rem;
+  }
+  .credits {
+    margin-top: 200px;
+  }
+  
+  .sub-credits {
+    display: grid;
+  }
+}
+
